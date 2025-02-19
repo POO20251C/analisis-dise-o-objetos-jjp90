@@ -1,3 +1,5 @@
+EJEMPLO TIENDA DE MUSICA
+
 ```mermaid
 classDiagram
     Compra <|-- Album : Tiene
