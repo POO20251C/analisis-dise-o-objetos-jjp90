@@ -1,7 +1,9 @@
+```mermaid
 classDiagram
     Compra <|-- Album : Tiene
     Compra <|-- Cliente : Realiza
-    class Compra{
+
+    class Compra {
         - str nombreCliente
         - str nombreAlbumCompra
         - date fechaCompra
@@ -10,17 +12,18 @@ classDiagram
         + devolucionCompra()
         + historialCompras()
     }
-    class Album{
+    
+    class Album {
         - str titulo
         - int codigo
         - date fechaLanzamiento
     }
-    class Cliente{
-        - str nombreCliente
-        - str nombreAlbumCompra
-        - date fechaCompra
-        - boolean estadoCompra
-        + registroCompra()
-        + devolucionCompra()
-        + historialCompras()
+    
+    class Cliente {
+        - int id
+        - str nombre
+        - date fechaRegistro
+        + comprarAlbum()
+        + devolucionAlbum()
     }
+```
