@@ -2,6 +2,9 @@
 # 2.-Dise-o-Orientado-a-Objetos
 Primer acercamiento y prácticas guiadas e individuales de POO
 
+
+EJMEPLO TIENDA DE MUSICA
+
 classDiagram
     Compra <|-- Album : Tiene
     Compra <|-- Cliente : Realiza
@@ -28,5 +31,3 @@ classDiagram
         + devolucionCompra()
         + historialCompras()
     }
-
-    
